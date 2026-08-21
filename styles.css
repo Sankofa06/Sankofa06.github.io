@@ -110,6 +110,8 @@ h1 span { color: var(--acid); }
 .app-store-link { display: inline-flex; flex-basis: 100%; width: max-content; }
 .app-store-link img { height: auto; width: 135px; }
 .project-actions .text-link { margin: 0; }
+.support-project-link { color: var(--cyan); display: inline-flex; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .62rem; gap: 6px; letter-spacing: .04em; text-decoration: none; }
+.support-project-link:hover { color: var(--ink); }
 .source-project-link { color: #8f958e; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .62rem; letter-spacing: .04em; text-decoration: none; }
 .source-project-link:hover { color: var(--acid); }
 .project-icon { align-items: center; border-radius: 16px; display: flex; height: 82px; justify-content: center; margin-bottom: 50px; overflow: hidden; width: 82px; }
