@@ -90,7 +90,8 @@ h1 span { color: var(--acid); }
 .visual-lm img { filter: drop-shadow(0 34px 35px rgba(0,0,0,.38)); height: min(64%, 330px); object-fit: contain; width: auto; }
 .visual-copy { bottom: 28px; display: flex; gap: 8px; left: 28px; position: absolute; }
 .visual-copy span { background: rgba(4,10,9,.64); border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: #b7f9ef; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .58rem; letter-spacing: .12em; padding: 6px 9px; }
-.visual-aero img { object-position: center; }
+.visual-aero { background: #0b1110; }
+.visual-aero img { object-fit: contain; object-position: center; }
 .project-meta { align-items: center; display: flex; justify-content: space-between; margin-bottom: 28px; }
 .project-number { color: #696f68; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; }
 .project-state { border-radius: 999px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .58rem; letter-spacing: .09em; padding: 6px 9px; text-transform: uppercase; }
