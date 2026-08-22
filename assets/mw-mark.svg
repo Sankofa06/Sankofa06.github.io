@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">MW monogram</title>
+  <rect width="64" height="64" rx="13" fill="#c9ff4a"/>
+  <path d="M14 31V14l18 17 18-17v17" fill="none" stroke="#0b0d0c" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M14 36l8 16 10-14 10 14 8-16" fill="none" stroke="#0b0d0c" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
