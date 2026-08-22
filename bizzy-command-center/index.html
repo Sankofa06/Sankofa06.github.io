@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bizzy Command Center is Michael Williams’s private control room for monitoring a personal computing fleet and starting Codex where each project lives.">
+    <meta name="author" content="Michael Williams">
+    <meta name="theme-color" content="#0b0d0c">
+    <meta property="og:title" content="Bizzy Command Center — one control room for every machine">
+    <meta property="og:description" content="A private, cross-platform control plane for fleet health, project-aware Codex sessions, and local-first work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sankofa06.github.io/bizzy-command-center/">
+    <meta property="og:site_name" content="Michael Williams Portfolio">
+    <meta property="og:image" content="https://sankofa06.github.io/assets/michael-williams-social-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bizzy Command Center — one control room for every machine">
+    <meta name="twitter:description" content="A private, cross-platform control plane for fleet health, project-aware Codex sessions, and local-first work.">
+    <meta name="twitter:image" content="https://sankofa06.github.io/assets/michael-williams-social-preview.png">
+    <title>Bizzy Command Center — Michael Williams</title>
+    <link rel="icon" href="../assets/mw-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="case-study.css">
+    <script src="../app.js" defer></script>
+  </head>
+  <body class="case-study-page">
+    <a class="skip-link" href="#story">Skip to project story</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="../" aria-label="Michael Williams portfolio home">
+        <img class="brand-mark" src="../assets/mw-mark.svg" width="34" height="34" alt="">
+        <span>Michael Williams</span>
+      </a>
+      <nav aria-label="Project navigation">
+        <a href="#story">Overview</a>
+        <a href="#architecture">Architecture</a>
+        <a class="nav-cta" href="../#work">All projects <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top" class="case-main">
+      <section class="case-hero" aria-labelledby="case-title">
+        <div class="case-hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Private infrastructure · Operational</p>
+          <h1 id="case-title">One control room.<br><span>Every machine.</span></h1>
+          <p class="case-lede">Bizzy Command Center turns a scattered Mac-and-Windows fleet into one understandable workspace. It shows which computers are ready, what capacity is available, and starts Codex on the machine that actually owns the project.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#story">What does that mean? <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="../#work">Back to all work <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="case-facts" aria-label="Project facts">
+            <li><strong>v0.2</strong><span>working system</span></li>
+            <li><strong>Mac + Windows</strong><span>host-native agents</span></li>
+            <li><strong>Private by design</strong><span>no public control surface</span></li>
+          </ul>
+        </div>
+
+        <div class="fleet-board" role="img" aria-label="Conceptual private dashboard showing three ready computers and one managed Codex session; operational details are intentionally omitted">
+          <div class="fleet-board-bar">
+            <span>FLEET_OVERVIEW</span>
+            <span class="board-private"><i aria-hidden="true"></i> PRIVATE</span>
+          </div>
+          <div class="board-summary">
+            <div><span>Nodes ready</span><strong>03</strong></div>
+            <div><span>Managed sessions</span><strong>01</strong></div>
+            <div><span>Network</span><strong>SECURE</strong></div>
+          </div>
+          <div class="board-machines" aria-hidden="true">
+            <article>
+              <div class="machine-heading"><span class="machine-dot"></span><strong>Controller</strong><small>ONLINE</small></div>
+              <div class="meter"><i style="width: 38%"></i></div>
+              <p>Coordination · Audit · UI</p>
+            </article>
+            <article>
+              <div class="machine-heading"><span class="machine-dot"></span><strong>Compute node</strong><small>READY</small></div>
+              <div class="meter"><i style="width: 64%"></i></div>
+              <p>GPU work · Local services</p>
+            </article>
+            <article>
+              <div class="machine-heading"><span class="machine-dot"></span><strong>Mobile workstation</strong><small>READY</small></div>
+              <div class="meter"><i style="width: 24%"></i></div>
+              <p>Projects · Native tools</p>
+            </article>
+          </div>
+          <div class="board-session">
+            <span class="session-icon" aria-hidden="true">›_</span>
+            <div><small>CODEX SESSION</small><strong>Project running on its home machine</strong></div>
+            <span class="reattach">REATTACH</span>
+          </div>
+          <p class="concept-note">Conceptual view — no live operational data.</p>
+        </div>
+      </section>
+
+      <section class="plain-english" id="story" aria-labelledby="plain-title">
+        <p class="eyebrow">In plain English</p>
+        <h2 id="plain-title">It is the page I open instead of walking from computer to computer.</h2>
+        <p>My projects and AI tools do not all live on one machine. Instead of remembering where everything is, opening remote desktops, and rebuilding terminal context by hand, I choose a computer and project from one private page. The Command Center makes the connection, starts or resumes Codex there, and keeps the operational details out of the way.</p>
+      </section>
+
+      <section class="story-split" aria-labelledby="why-title">
+        <div class="story-heading">
+          <p class="eyebrow">Why it exists</p>
+          <h2 id="why-title">The hardware was already a system. It needed to feel like one.</h2>
+        </div>
+        <div class="problem-answer">
+          <article>
+            <span>THE PROBLEM</span>
+            <h3>Useful capacity was scattered.</h3>
+            <p>Different projects, models, and services belong on different computers. That created a daily tax: check each machine, find the right folder, open the right terminal, and remember which session was still alive.</p>
+          </article>
+          <article>
+            <span>THE ANSWER</span>
+            <h3>Centralize the view, not the work.</h3>
+            <p>A small controller presents one dashboard while host-native agents keep execution on each machine. The interface coordinates the fleet; the files, credentials, tools, and compute stay where they already belong.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow-section" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">The everyday flow</p><h2 id="workflow-title">From “where is it?” to working.</h2></div>
+          <p>The core interaction is deliberately short enough to use from a laptop, tablet, or phone.</p>
+        </div>
+        <ol class="workflow-list">
+          <li><span>01</span><div><h3>See the fleet</h3><p>Check availability, CPU, memory, disk, GPU, uptime, and the health of configured services.</p></div></li>
+          <li><span>02</span><div><h3>Pick the right home</h3><p>Choose an online machine and a discovered project folder within its approved roots.</p></div></li>
+          <li><span>03</span><div><h3>Start with context</h3><p>Launch Codex in that folder and optionally send the opening prompt with the session.</p></div></li>
+          <li><span>04</span><div><h3>Come back later</h3><p>See managed sessions in one place and reattach without reconstructing the setup.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="architecture-section" id="architecture" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">How it fits together</p><h2 id="architecture-title">One coordinator. Small agents at the edge.</h2></div>
+          <p>The browser never needs direct administrative access to each computer. The controller authenticates the person, polls the fleet, and proxies the approved session traffic.</p>
+        </div>
+
+        <div class="architecture-map" role="img" aria-label="A trusted browser connects through a private network to a controller, which coordinates three host-native machine agents">
+          <div class="architecture-node browser-node">
+            <span>YOU</span>
+            <strong>Trusted browser</strong>
+            <small>Phone · Tablet · Laptop</small>
+          </div>
+          <div class="architecture-link link-down"><span>ENCRYPTED PRIVATE NETWORK</span></div>
+          <div class="architecture-node controller-node">
+            <span>CONTROL PLANE</span>
+            <strong>Command Center</strong>
+            <small>Authentication · Fleet state · Routing · Audit</small>
+          </div>
+          <div class="architecture-link link-fan"><span>AUTHENTICATED NODE CHANNELS</span></div>
+          <div class="agent-row">
+            <div class="architecture-node agent-node"><span>AGENT</span><strong>Controller host</strong><small>Telemetry · PTY</small></div>
+            <div class="architecture-node agent-node"><span>AGENT</span><strong>Compute host</strong><small>GPU · Services · PTY</small></div>
+            <div class="architecture-node agent-node"><span>AGENT</span><strong>Workstation</strong><small>Projects · PTY</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="not-section" aria-labelledby="not-title">
+        <div class="story-heading">
+          <p class="eyebrow">A useful distinction</p>
+          <h2 id="not-title">What it is—and what it is not.</h2>
+        </div>
+        <div class="distinction-grid">
+          <article><span>IS</span><h3>A private operations layer</h3><p>It makes a personal fleet legible and gives repeatable access to project-aware Codex sessions.</p></article>
+          <article><span>IS NOT</span><h3>An AI model</h3><p>Codex and local services do the specialized work. The Command Center coordinates where that work runs.</p></article>
+          <article><span>IS NOT</span><h3>A public remote shell</h3><p>Access stays on the private network, actions are bounded, and the public artifact is this case study—not a live admin panel.</p></article>
+        </div>
+      </section>
+
+      <section class="decisions-section" aria-labelledby="decisions-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">Design decisions</p><h2 id="decisions-title">Power, with guardrails.</h2></div>
+          <p>Because this interface sits close to real machines, the safety model is part of the product design.</p>
+        </div>
+        <div class="decision-grid">
+          <article><span>01</span><h3>Private by default</h3><p>The dashboard is intended for an encrypted personal network, with no public ingress.</p></article>
+          <article><span>02</span><h3>Least necessary access</h3><p>Working directories are bounded and service actions are explicitly allowlisted.</p></article>
+          <article><span>03</span><h3>Credentials stay server-side</h3><p>Each host has its own identity; node credentials are not handed to the browser.</p></article>
+          <article><span>04</span><h3>Operations leave evidence</h3><p>Privileged control-plane actions are recorded in a local audit log with common secrets redacted.</p></article>
+        </div>
+      </section>
+
+      <section class="build-section" aria-labelledby="build-title">
+        <div class="build-copy">
+          <p class="eyebrow">Under the hood</p>
+          <h2 id="build-title">A web interface with host-native reach.</h2>
+          <p>The controller is a Python service with a compiled React interface and a local SQLite audit trail. Lightweight Python agents expose only the monitored state and allowed operations needed by the dashboard. Native pseudo-terminals keep command-line behavior correct across macOS and Windows.</p>
+        </div>
+        <dl class="stack-list">
+          <div><dt>Interface</dt><dd>React · TypeScript · xterm.js</dd></div>
+          <div><dt>Controller</dt><dd>Python · FastAPI · SQLite</dd></div>
+          <div><dt>Machine bridge</dt><dd>PTY · ConPTY · system telemetry</dd></div>
+          <div><dt>Private transport</dt><dd>Tailscale · HTTPS · per-node auth</dd></div>
+        </dl>
+      </section>
+
+      <section class="status-section" aria-labelledby="status-title">
+        <div>
+          <p class="eyebrow">Current state</p>
+          <h2 id="status-title">The useful version exists.</h2>
+          <p>Version 0.2 handles fleet status, project discovery, managed Codex launch and reattachment, cross-platform terminals, service health, and audit logging. It is an operational personal tool, not a public SaaS product.</p>
+        </div>
+        <div class="next-panel">
+          <span>NEXT</span>
+          <h3>Make sessions outlive the bridge.</h3>
+          <p>The next architectural step is durable session ownership across service restarts, followed by deeper structured Codex integration and clearer multi-machine handoffs.</p>
+        </div>
+      </section>
+
+      <section class="contact-strip case-contact" aria-label="Project navigation">
+        <p>That is what the heck Bizzy Command Center is.</p>
+        <a href="../#work">Explore the rest of the work <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span data-year>2026</span> Michael Williams · Sankofa06</span>
+      <span>Private system. Public case study.</span>
+    </footer>
+  </body>
+</html>
