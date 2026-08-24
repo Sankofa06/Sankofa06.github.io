@@ -81,6 +81,8 @@ h1 span { color: var(--acid); }
 .project-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); min-height: 390px; overflow: hidden; padding: 30px; position: relative; transition: border-color .2s ease, transform .2s ease; }
 .project-card:hover { border-color: #495048; transform: translateY(-3px); }
 .project-card[hidden] { display: none; }
+.project-card--discovered { border-style: dashed; }
+.glyph-discovered { color: #b8f5d5; background: linear-gradient(145deg, #13251f, #0d1513); }
 .project-card--wide { display: grid; grid-column: 1 / -1; grid-template-columns: 1.15fr .85fr; min-height: 520px; padding: 0; }
 .project-card--reverse .project-visual { order: 2; }
 .project-body { align-self: center; padding: clamp(30px, 5vw, 70px); }
