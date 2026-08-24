@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="case-study.css">
     <script src="../app.js" defer></script>
+    <script src="activity.js" defer></script>
   </head>
   <body class="case-study-page">
     <a class="skip-link" href="#story">Skip to project story</a>
@@ -48,7 +49,7 @@
             <a class="button secondary" href="../#work">Back to all work <span aria-hidden="true">↗</span></a>
           </div>
           <ul class="case-facts" aria-label="Project facts">
-            <li><strong>v0.2</strong><span>working system</span></li>
+            <li><strong>v0.3</strong><span>working system</span></li>
             <li><strong>Mac + Windows</strong><span>host-native agents</span></li>
             <li><strong>Private by design</strong><span>no public control surface</span></li>
           </ul>
@@ -60,8 +61,8 @@
           <h2 id="private-entry-title">Bizzy Command Center</h2>
           <p id="private-entry-description">Monitor every machine and start Codex where the work lives.</p>
           <div class="private-entry-field" aria-hidden="true">
-            <span>Owner password</span>
-            <div><i class="entry-lock"></i><span>Enter your dashboard password</span></div>
+            <span>Owner PIN or passphrase</span>
+            <div><i class="entry-lock"></i><span>Enter your private credential</span></div>
           </div>
           <div class="private-entry-button" aria-hidden="true"><span>Enter command center</span><span>→</span></div>
           <div class="private-entry-footer"><i aria-hidden="true"></i> Reachable only through the network path you expose</div>
@@ -112,6 +113,38 @@
             <span class="reattach">REATTACH</span>
           </div>
           <p class="concept-note">Conceptual view — no live operational data.</p>
+        </div>
+      </section>
+
+      <section class="activity-window-section" id="activity" aria-labelledby="activity-window-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Public studio window</p>
+            <h2 id="activity-window-title">See the kitchen, not the keys.</h2>
+          </div>
+          <p>A delayed, read-only glimpse of aggregate fleet activity. It shows the shape of the work without exposing machines, addresses, ports, models, prompts, projects, or personal data.</p>
+        </div>
+
+        <div class="activity-window" data-public-activity>
+          <div class="activity-window__bar">
+            <span><i data-activity-dot></i> BIZZY / PUBLIC ACTIVITY</span>
+            <strong data-activity-state>WINDOW PREPARING</strong>
+          </div>
+          <div class="activity-window__metrics">
+            <article><span>Fleet</span><strong data-activity-fleet>—</strong><small>machines online</small></article>
+            <article><span>Memory</span><strong data-activity-pressure>—</strong><small>coarse pressure band</small></article>
+            <article><span>Coding</span><strong data-activity-coding>—</strong><small>coarse activity signal</small></article>
+          </div>
+          <div class="activity-window__engines">
+            <div>
+              <span>ENGINES ON THE FLOOR</span>
+              <small data-activity-freshness>The first privacy-filtered snapshot has not been published.</small>
+            </div>
+            <ul data-activity-engines>
+              <li><span>Private exporter</span><strong>NOT ENABLED</strong></li>
+            </ul>
+          </div>
+          <p class="activity-window__privacy"><span aria-hidden="true">◉</span> Coarse and delayed by design. This surface cannot control the fleet.</p>
         </div>
       </section>
 
@@ -217,7 +250,7 @@
         <div>
           <p class="eyebrow">Current state</p>
           <h2 id="status-title">The useful version exists.</h2>
-          <p>Version 0.2 handles fleet status, project discovery, managed Codex launch and reattachment, cross-platform terminals, service health, and audit logging. It is an operational personal tool, not a public SaaS product.</p>
+          <p>Version 0.3 adds a native, read-only iPhone dashboard and the privacy-filtered public studio window to fleet status, project discovery, managed Codex launch and reattachment, cross-platform terminals, service health, and audit logging. It is an operational personal tool, not a public SaaS product.</p>
         </div>
         <div class="next-panel">
           <span>NEXT</span>

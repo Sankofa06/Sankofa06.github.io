@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-24T18:45:03+00:00",
+  "activity": "making",
+  "fleet": {
+    "online": 3,
+    "total": 3
+  },
+  "capacity": {
+    "memory_pressure": "balanced"
+  },
+  "engines": [
+    {
+      "name": "OpenCode",
+      "category": "coding",
+      "instances": 1,
+      "running": 0
+    },
+    {
+      "name": "Stability Matrix",
+      "category": "creative",
+      "instances": 1,
+      "running": 1
+    },
+    {
+      "name": "ComfyUI",
+      "category": "image",
+      "instances": 1,
+      "running": 1
+    },
+    {
+      "name": "Forge",
+      "category": "image",
+      "instances": 3,
+      "running": 0
+    },
+    {
+      "name": "SD.Next",
+      "category": "image",
+      "instances": 1,
+      "running": 0
+    },
+    {
+      "name": "LM Studio",
+      "category": "language",
+      "instances": 3,
+      "running": 3
+    },
+    {
+      "name": "Wan2GP",
+      "category": "video",
+      "instances": 1,
+      "running": 0
+    }
+  ],
+  "work": {
+    "coding": "active"
+  },
+  "privacy": "Coarse fleet totals only; no names, addresses, ports, paths, models, prompts, or project details."
+}
