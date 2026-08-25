@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-24T18:30:00+00:00",
+  "generated_at": "2026-08-25T04:06:34+00:00",
   "owner": "Sankofa06",
   "inventory": {
-    "repositories_seen": 16,
-    "project_repositories_listed": 14,
+    "repositories_seen": 17,
+    "project_repositories_listed": 15,
     "infrastructure_repositories": 2,
     "new_public_repositories_auto_listed": [],
     "new_private_repositories_pending_review": 0
@@ -17,6 +17,7 @@
     {"repo":"SingerKeepers","display_name":"Singer Keepers","role":"product","family":"music-tools","categories":["creative","tools"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/SingerKeepers/","source_url":"https://github.com/Sankofa06/SingerKeepers","description":null,"topics":[],"pushed_at":null},
     {"repo":"ArtistHub","display_name":"ArtistHub","role":"legacy-companion","family":"music-tools","categories":["creative","tools"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/ArtistHub/","source_url":"https://github.com/Sankofa06/ArtistHub","description":null,"topics":[],"pushed_at":null},
     {"repo":"AeroTycoonGame","display_name":"AeroTycoon","role":"product","family":"aviation-simulation","categories":["games"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/AeroTycoonGame/","source_url":"https://github.com/Sankofa06/AeroTycoonGame","description":null,"topics":[],"pushed_at":null},
+    {"repo":"the-long-republic","display_name":"The Long Republic","role":"product","family":"governance-simulation","categories":["games"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/the-long-republic/","source_url":"https://github.com/Sankofa06/the-long-republic","description":"A mobile-first political dynasty, settlement, and journey simulation.","topics":[],"pushed_at":null},
     {"repo":"FabriconAerospace","display_name":"Fabricon Aerospace","role":"rewrite","family":"aviation-simulation","categories":["games"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/FabriconAerospace/","source_url":"https://github.com/Sankofa06/FabriconAerospace","description":null,"topics":[],"pushed_at":null},
     {"repo":"ForzAdvisor","display_name":"ForzAdvisor","role":"product","family":"standalone","categories":["tools"],"visibility":"public","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/ForzAdvisor/","source_url":"https://github.com/Sankofa06/ForzAdvisor","description":null,"topics":[],"pushed_at":null},
     {"repo":"harness-os","display_name":"Harness OS","role":"product","family":"agent-os","categories":["ai","tools"],"visibility":"public","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/harness-os/","source_url":"https://github.com/Sankofa06/harness-os","description":null,"topics":[],"pushed_at":null},

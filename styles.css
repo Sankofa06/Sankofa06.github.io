@@ -94,6 +94,17 @@ h1 span { color: var(--acid); }
 .visual-copy span { background: rgba(4,10,9,.64); border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: #b7f9ef; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .58rem; letter-spacing: .12em; padding: 6px 9px; }
 .visual-aero { background: #0b1110; }
 .visual-aero img { object-fit: contain; object-position: center; }
+.visual-republic { align-items: center; background: radial-gradient(circle at 50% 38%, #253943 0, #10191f 48%, #090e12 100%); display: flex; flex-direction: column; justify-content: center; }
+.visual-republic::before { background-image: linear-gradient(rgba(221,195,128,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(221,195,128,.08) 1px, transparent 1px); background-size: 44px 44px; content: ""; inset: 0; mask-image: linear-gradient(to bottom, #000, transparent 85%); position: absolute; }
+.visual-republic::after { border: 1px solid rgba(221,195,128,.25); content: ""; inset: 28px; position: absolute; }
+.republic-seal { align-items: center; border: 1px solid #ddc380; color: #ddc380; display: flex; font-family: Georgia, serif; font-size: 2rem; height: 96px; justify-content: center; position: relative; width: 96px; z-index: 1; }
+.republic-seal::before, .republic-seal::after { background: #ddc380; content: ""; height: 1px; position: absolute; top: 50%; width: 68px; }
+.republic-seal::before { right: calc(100% + 18px); }
+.republic-seal::after { left: calc(100% + 18px); }
+.republic-motto { color: #f1ead9 !important; font-family: Georgia, serif; font-size: clamp(1.7rem, 3.2vw, 3rem); font-style: italic; line-height: 1.02; margin: 28px auto 0 !important; max-width: 380px; position: relative; text-align: center; z-index: 1; }
+.republic-ledger { bottom: 38px; display: grid; grid-template-columns: repeat(4, 1fr); left: 48px; position: absolute; right: 48px; z-index: 1; }
+.republic-ledger span { border-left: 1px solid rgba(221,195,128,.18); color: rgba(241,234,217,.52); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .52rem; letter-spacing: .1em; padding: 8px; text-align: center; }
+.republic-ledger span:last-child { border-right: 1px solid rgba(221,195,128,.18); }
 .project-meta { align-items: center; display: flex; justify-content: space-between; margin-bottom: 28px; }
 .project-number { color: #696f68; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; }
 .project-state { border-radius: 999px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .58rem; letter-spacing: .09em; padding: 6px 9px; text-transform: uppercase; }
