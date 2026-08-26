@@ -109,6 +109,7 @@ h1 span { color: var(--acid); }
 .project-number { color: #696f68; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .72rem; }
 .project-state { border-radius: 999px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .58rem; letter-spacing: .09em; padding: 6px 9px; text-transform: uppercase; }
 .project-state.active { background: rgba(201,255,74,.12); color: var(--acid); }
+.project-state.review { background: rgba(255,199,86,.12); color: #ffc756; }
 .project-state.building { background: rgba(102,230,210,.12); color: var(--cyan); }
 .project-state.evolving { background: rgba(255,156,85,.12); color: var(--orange); }
 .project-state.prototype, .project-state.archive { background: #252a26; color: #a9ada7; }
