@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-26T21:27:02+00:00",
+  "generated_at": "2026-09-02T17:54:27+00:00",
   "owner": "Sankofa06",
   "inventory": {
     "repositories_seen": 17,
@@ -14,7 +14,7 @@
     {"repo":"Conductor","display_name":"ComfyChat / Conductor","role":"product","family":"ai-workspaces","categories":["ai","tools"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/projects/conductor/","source_url":"https://github.com/Sankofa06/Conductor","description":null,"topics":[],"pushed_at":null},
     {"repo":"Lucidity","display_name":"Mira / Lucidity","role":"alternative","family":"ai-workspaces","categories":["ai","tools"],"visibility":"public","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/Lucidity/","source_url":"https://github.com/Sankofa06/Lucidity","description":null,"topics":[],"pushed_at":null},
     {"repo":"LM-Laboratory","display_name":"LM Laboratory","role":"workbench","family":"ai-workspaces","categories":["ai","tools","archive"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/LM-Laboratory/","source_url":"https://github.com/Sankofa06/LM-Laboratory","description":null,"topics":[],"pushed_at":null},
-    {"repo":"SingerKeepers","display_name":"Singer Keepers","role":"product","family":"music-tools","categories":["creative","tools"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/SingerKeepers/","source_url":"https://github.com/Sankofa06/SingerKeepers","description":null,"topics":[],"pushed_at":null},
+    {"repo":"SingerKeepers","display_name":"PocketDAW: Mobile Studio","role":"product","family":"music-tools","categories":["creative","tools"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/SingerKeepers/","source_url":"https://github.com/Sankofa06/SingerKeepers","description":null,"topics":[],"pushed_at":null},
     {"repo":"ArtistHub","display_name":"ArtistHub","role":"legacy-companion","family":"music-tools","categories":["creative","tools"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/ArtistHub/","source_url":"https://github.com/Sankofa06/ArtistHub","description":null,"topics":[],"pushed_at":null},
     {"repo":"AeroTycoonGame","display_name":"Fabricon: Aerospace","role":"product","family":"aviation-simulation","categories":["games"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/AeroTycoonGame/","source_url":"https://github.com/Sankofa06/AeroTycoonGame","description":null,"topics":[],"pushed_at":null},
     {"repo":"the-long-republic","display_name":"The Long Republic","role":"product","family":"governance-simulation","categories":["games"],"visibility":"private","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/the-long-republic/","source_url":"https://github.com/Sankofa06/the-long-republic","description":"A mobile-first political dynasty, settlement, and journey simulation.","topics":[],"pushed_at":null},
