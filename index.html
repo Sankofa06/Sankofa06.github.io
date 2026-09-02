@@ -83,36 +83,46 @@
       <section class="work-section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Selected projects</p>
-            <h2 id="work-title">Things I’m building</h2>
+            <p class="eyebrow">Released &amp; in motion</p>
+            <h2 id="work-title">What’s active now</h2>
           </div>
-          <p>Flagship products, focused experiments, and the foundations behind them.</p>
+          <p>Live App Store products first, followed by the work closest to release and the two systems currently in active development.</p>
         </div>
 
-        <div class="atlas-summary" aria-label="Repository audit summary">
-          <div><strong data-repo-count>15</strong><span>project repositories shown</span></div>
-          <div><strong>5</strong><span>project families</span></div>
-          <div><strong data-repo-audit-date>2026-09-02</strong><span>last repository sync</span></div>
+        <div class="atlas-summary" aria-label="Current product status">
+          <div><strong>4</strong><span>live on the App Store</span></div>
+          <div><strong>1</strong><span>approaching release</span></div>
+          <div><strong>2</strong><span>active builds</span></div>
         </div>
 
-        <div class="filters" aria-label="Filter repositories">
-          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI</button>
-          <button class="filter" type="button" data-filter="games" aria-pressed="false">Games</button>
-          <button class="filter" type="button" data-filter="tools" aria-pressed="false">Tools</button>
-          <button class="filter" type="button" data-filter="creative" aria-pressed="false">Creative</button>
-          <button class="filter" type="button" data-filter="support" aria-pressed="false">Support</button>
-          <button class="filter" type="button" data-filter="archive" aria-pressed="false">Archive</button>
-        </div>
+        <div class="project-grid project-grid--priority">
+          <article class="project-card" data-category="tools" data-repo="ForzAdvisor">
+            <div class="project-icon icon-orange"><img src="assets/forzadvisor.png" alt="ForzAdvisor app icon" width="640" height="640"></div>
+            <div class="project-meta"><span class="project-number">Latest release · 01</span><span class="project-state active">1.41.1 Live</span></div>
+            <h3>ForzAdvisor</h3>
+            <p>A fast, structured tuning companion for racing games. Capture a build, confirm every stat, generate a complete tune, and refine it after each run.</p>
+            <p class="next-step"><strong>Current:</strong> version 1.41.1 launched September 2, 2026. Monitor public feedback while continuing permission-complete FH5 research.</p>
+            <ul class="tags" aria-label="Technologies"><li>SwiftUI</li><li>Vision OCR</li><li>On-device AI</li></ul>
+            <div class="project-actions"><a class="app-store-link" href="https://apps.apple.com/us/app/forzadvisor/id6775224250" aria-label="Download ForzAdvisor on the App Store"><img src="assets/app-store-badge.svg" width="135" height="45" alt="Download on the App Store"></a><a class="text-link" href="https://sankofa06.github.io/ForzAdvisor/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/ForzAdvisor">View source <span aria-hidden="true">↗</span></a></div>
+          </article>
 
-        <div class="project-grid">
+          <article class="project-card" data-category="creative tools" data-repo="SingerKeepers">
+            <div class="project-icon icon-copper"><img src="assets/pocketdaw.png" alt="PocketDAW app icon" width="256" height="256"></div>
+            <div class="project-meta"><span class="project-number">App Store release · 02</span><span class="project-state active">1.2.1 Live</span></div>
+            <h3>PocketDAW: Mobile Studio</h3>
+            <p>A local-first vocal-production studio for recording, editing, mixing, lyric work, and portable export, now available on the App Store for iPhone and iPad.</p>
+            <p class="next-step"><strong>Current:</strong> version 1.2.1 protects committed projects through failed saves, preserves validated recordings for recovery, and safely deletes damaged project packages.</p>
+            <ul class="tags" aria-label="Technologies"><li>SwiftUI</li><li>Audio</li><li>Local-first</li></ul>
+            <div class="project-actions"><a class="app-store-link" href="https://apps.apple.com/us/app/pocketdaw-mobile-studio/id6769739931" aria-label="Download PocketDAW on the App Store"><img src="assets/app-store-badge.svg" width="135" height="45" alt="Download on the App Store"></a><a class="text-link" href="https://sankofa06.github.io/SingerKeepers/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/SingerKeepers">View private source <span aria-hidden="true">↗</span></a></div>
+          </article>
+
           <article class="project-card project-card--wide" data-category="ai tools" data-repo="LMManagerPro">
             <div class="project-visual visual-lm">
               <img src="assets/lm-manager-pro.png" alt="LM Manager Pro app icon" width="640" height="640">
               <div class="visual-copy"><span>LOCAL</span><span>CLOUD</span><span>ON-DEVICE</span></div>
             </div>
             <div class="project-body">
-              <div class="project-meta"><span class="project-number">AI workspace family · 01</span><span class="project-state active">2.28.0 Live</span></div>
+              <div class="project-meta"><span class="project-number">App Store release · 03</span><span class="project-state active">2.28.0 Live</span></div>
               <h3>LM Manager Pro</h3>
               <p>An AI command center for managing models, machines, personas, teams, chat, image generation, and repeatable workflows across local, on-device, and cloud providers.</p>
               <p class="next-step"><strong>Current:</strong> version 2.28.0 makes Chat, Image, Compare, Team, and Episode modes explicit and keeps each selection visible through route review.</p>
@@ -126,7 +136,7 @@
               <img src="assets/aerotycoon.png" alt="Fabricon: Aerospace aviation strategy game artwork" width="1200" height="675">
             </div>
             <div class="project-body">
-              <div class="project-meta"><span class="project-number">Aviation family · 02</span><span class="project-state active">2.1.4 Live</span></div>
+              <div class="project-meta"><span class="project-number">App Store release · 04</span><span class="project-state active">2.1.4 Live</span></div>
               <h3>Fabricon: Aerospace</h3>
               <p>A century-spanning aviation strategy game, developed in the AeroTycoonGame repository. Design aircraft, build a workforce, win contracts, navigate historical eras, and grow an aerospace company from 1910 into the future.</p>
               <p class="next-step"><strong>Current:</strong> version 2.1.4 carries each designed aircraft’s wing, fuselage, powerplant, variants, and technologies across previews, Campus, and Flight Test.</p>
@@ -135,27 +145,9 @@
             </div>
           </article>
 
-          <article class="project-card project-card--wide" data-category="games" data-repo="the-long-republic">
-            <div class="project-visual visual-republic" aria-hidden="true">
-              <div class="republic-seal">LR</div>
-              <p class="republic-motto">A state should outlive its ruler.</p>
-              <div class="republic-ledger">
-                <span>FOOD</span><span>WATER</span><span>MONEY</span><span>DEFENSE</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span class="project-number">Governance simulation · 03</span><span class="project-state building">Active prototype</span></div>
-              <h3>The Long Republic</h3>
-              <p>A mobile-first political dynasty prototype where players govern a cutaway civic estate, resolve crises, and carry one polity across changing regimes.</p>
-              <p class="next-step"><strong>Resume at:</strong> connect the campaign clock, ruler-selection gate, and first staffed resource room to the playable residence.</p>
-              <ul class="tags" aria-label="Technologies"><li>Unreal Engine</li><li>Political simulation</li><li>iOS</li></ul>
-              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/the-long-republic/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/the-long-republic">View private source <span aria-hidden="true">↗</span></a></div>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="ai tools" data-repo="Conductor">
+          <article class="project-card project-card--spotlight" data-category="ai tools" data-repo="Conductor">
             <div class="project-icon icon-teal"><img src="assets/comfychat.png" alt="ComfyChat app icon" width="256" height="256"></div>
-            <div class="project-meta"><span class="project-number">AI workspace family · 04</span><span class="project-state review">Waiting for Review</span></div>
+            <div class="project-meta"><span class="project-number">Approaching release · 05</span><span class="project-state review">Waiting for Review</span></div>
             <h3>ComfyChat / Conductor</h3>
             <p>A chat-first cockpit for a personal AI fleet: local and on-device models, image engines, nodes, tools, and generated work in one native iPhone and iPad experience.</p>
             <p class="next-step"><strong>Current:</strong> iOS 1.2.1 is waiting for App Review while live single- and multi-node ComfyUI acceptance continues as a separate gate.</p>
@@ -163,136 +155,93 @@
             <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/projects/conductor/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/Conductor">View private source <span aria-hidden="true">↗</span></a></div>
           </article>
 
+          <article class="project-card" data-category="games" data-repo="the-long-republic">
+            <div class="project-glyph glyph-republic" aria-hidden="true">LR</div>
+            <div class="project-meta"><span class="project-number">Active build · 06</span><span class="project-state building">Active prototype</span></div>
+            <h3>The Long Republic</h3>
+            <p>A mobile-first political dynasty prototype where players govern a cutaway civic estate, resolve crises, and carry one polity across changing regimes.</p>
+            <p class="next-step"><strong>Resume at:</strong> connect the campaign clock, ruler-selection gate, and first staffed resource room to the playable residence.</p>
+            <ul class="tags" aria-label="Technologies"><li>Unreal Engine</li><li>Political simulation</li><li>iOS</li></ul>
+            <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/the-long-republic/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/the-long-republic">View private source <span aria-hidden="true">↗</span></a></div>
+          </article>
+
           <article class="project-card" data-category="ai tools" data-repo="harness-os">
             <div class="project-glyph glyph-harness" aria-hidden="true">H/OS</div>
-            <div class="project-meta"><span class="project-number">Agent OS family · 05</span><span class="project-state building">Alpha</span></div>
+            <div class="project-meta"><span class="project-number">Active build · 07</span><span class="project-state building">Alpha</span></div>
             <h3>Harness OS</h3>
             <p>A local-first agent operating system and AI compute control plane with stable Contacts, bounded workspaces, observable delegation, and shared WebUI and TUI clients.</p>
             <p class="next-step"><strong>Resume at:</strong> validate real providers, remote hosts, node telemetry, and phone workflows.</p>
             <ul class="tags" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>TypeScript</li></ul>
             <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/harness-os/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/harness-os">View source <span aria-hidden="true">↗</span></a></div>
           </article>
-
-          <article class="project-card" data-category="tools" data-repo="ForzAdvisor">
-            <div class="project-icon icon-orange"><img src="assets/forzadvisor.png" alt="ForzAdvisor app icon" width="640" height="640"></div>
-            <div class="project-meta"><span class="project-number">Standalone · 06</span><span class="project-state active">1.41.1 Live</span></div>
-            <h3>ForzAdvisor</h3>
-            <p>A fast, structured tuning companion for racing games. Capture a build, confirm every stat, generate a complete tune, and refine it after each run.</p>
-            <p class="next-step"><strong>Current:</strong> version 1.41.1 launched September 2, 2026. Monitor public feedback while continuing permission-complete FH5 research.</p>
-            <ul class="tags" aria-label="Technologies"><li>SwiftUI</li><li>Vision OCR</li><li>On-device AI</li></ul>
-            <div class="project-actions"><a class="app-store-link" href="https://apps.apple.com/us/app/forzadvisor/id6775224250" aria-label="Download ForzAdvisor on the App Store"><img src="assets/app-store-badge.svg" width="135" height="45" alt="Download on the App Store"></a><a class="text-link" href="https://sankofa06.github.io/ForzAdvisor/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/ForzAdvisor">View source <span aria-hidden="true">↗</span></a></div>
-          </article>
-
-          <article class="project-card" data-category="ai tools archive" data-repo="LM-Laboratory">
-            <div class="project-icon icon-blue"><img src="assets/lm-laboratory.png" alt="LM Laboratory app icon" width="640" height="640"></div>
-            <div class="project-meta"><span class="project-number">AI workspace family · 07</span><span class="project-state archive">Archived</span></div>
-            <h3>LM Laboratory</h3>
-            <p>An archived native workbench for discovering, loading, comparing, and orchestrating local models, retained as a technical reference for the active AI products.</p>
-            <p class="next-step"><strong>Status:</strong> product work and the App Store record were retired in August 2026; there is no active release roadmap.</p>
-            <ul class="tags" aria-label="Technologies"><li>SwiftUI</li><li>LM Studio</li><li>Model ops</li></ul>
-            <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/LM-Laboratory/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/LM-Laboratory">View private source <span aria-hidden="true">↗</span></a></div>
-          </article>
-
-          <article class="project-card" data-category="ai tools" data-repo="Lucidity">
-            <div class="project-glyph glyph-mira" aria-hidden="true">M</div>
-            <div class="project-meta"><span class="project-number">AI workspace family · 08</span><span class="project-state prototype">Early alpha</span></div>
-            <h3>Lucidity / Mira</h3>
-            <p>A chat-first AI studio that brings local machines, cloud models, media engines, personas, teams, and persistent projects into one focused workspace.</p>
-            <p class="next-step"><strong>Resume at:</strong> durable native persistence and multi-route chat; treat the Fleet PWA as a parallel prototype.</p>
-            <ul class="tags" aria-label="Technologies"><li>SwiftUI</li><li>Streaming chat</li><li>Multi-model</li></ul>
-            <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/Lucidity/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/Lucidity">View source <span aria-hidden="true">↗</span></a></div>
-          </article>
-
-          <article class="project-card" data-category="creative tools" data-repo="SingerKeepers">
-            <div class="project-icon icon-copper"><img src="assets/pocketdaw.png" alt="PocketDAW app icon" width="256" height="256"></div>
-            <div class="project-meta"><span class="project-number">Music family · 09</span><span class="project-state active">1.2.1 Live</span></div>
-            <h3>PocketDAW: Mobile Studio</h3>
-            <p>A local-first vocal-production studio for recording, editing, mixing, lyric work, and portable export, now available on the App Store for iPhone and iPad.</p>
-            <p class="next-step"><strong>Current:</strong> version 1.2.1 protects committed projects through failed saves, preserves validated recordings for recovery, and safely deletes damaged project packages.</p>
-            <ul class="tags" aria-label="Technologies"><li>SwiftUI</li><li>Audio</li><li>Local-first</li></ul>
-            <div class="project-actions"><a class="app-store-link" href="https://apps.apple.com/us/app/pocketdaw-mobile-studio/id6769739931" aria-label="Download PocketDAW on the App Store"><img src="assets/app-store-badge.svg" width="135" height="45" alt="Download on the App Store"></a><a class="text-link" href="https://sankofa06.github.io/SingerKeepers/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/SingerKeepers">View private source <span aria-hidden="true">↗</span></a></div>
-          </article>
-
-          <article class="project-card" data-category="creative tools" data-repo="ArtistHub">
-            <div class="project-glyph glyph-song" aria-hidden="true">SK</div>
-            <div class="project-meta"><span class="project-number">Music family · 10</span><span class="project-state prototype">Functional beta</span></div>
-            <h3>ArtistHub / Song Keepers</h3>
-            <p>An older song-centric catalog and artist-operations workspace connecting lyrics, projects, collaborators, releases, rights, beats, and next actions.</p>
-            <p class="next-step"><strong>Resume at:</strong> relationship graph and connected context; this is adjacent to—not the same product as—the PocketDAW studio.</p>
-            <ul class="tags" aria-label="Technologies"><li>SwiftUI</li><li>SwiftData</li><li>Catalog</li></ul>
-            <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/ArtistHub/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/ArtistHub">View private source <span aria-hidden="true">↗</span></a></div>
-          </article>
-
-          <article class="project-card" data-category="games" data-repo="FabriconAerospace">
-            <div class="project-glyph glyph-fabricon" aria-hidden="true">FA</div>
-            <div class="project-meta"><span class="project-number">Aviation family · 11</span><span class="project-state building">Early rewrite</span></div>
-            <h3>Fabricon Aerospace</h3>
-            <p>A Clean Swift architectural rewrite of AeroTycoon with a working finance vertical slice, extensive design documents, and substantial remaining scaffolding.</p>
-            <p class="next-step"><strong>Resume at:</strong> reconcile the stale task ledger, then complete coordinator, persistence, campus, and gameplay-manager slices.</p>
-            <ul class="tags" aria-label="Technologies"><li>Swift 6</li><li>RealityKit</li><li>Strategy</li></ul>
-            <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/FabriconAerospace/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/FabriconAerospace">View private source <span aria-hidden="true">↗</span></a></div>
-          </article>
-
-          <article class="project-card project-card--compact" data-category="ai archive" data-repo="harness-os-2">
-            <div><div class="project-meta"><span class="project-number">Agent OS family · 12</span><span class="project-state archive">Spec seed</span></div><h3>harness-os-2</h3></div>
-            <div><p>The exact specification-kit precursor that was realized in Harness OS—not a second implementation.</p><p class="next-step"><strong>Decision:</strong> retain as historical input or archive it.</p><div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/harness-os-2/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/harness-os-2">View source <span aria-hidden="true">↗</span></a></div></div>
-          </article>
-
-          <article class="project-card project-card--compact" data-category="ai support" data-repo="LMManagerProFeedback">
-            <div><div class="project-meta"><span class="project-number">Support · 13</span><span class="project-state evolving">Degraded</span></div><h3>LM Manager Pro Feedback</h3></div>
-            <div><p>Public product site, issue board, feedback relay source, and substantial local web companion for the private native app.</p><p class="next-step"><strong>Resume at:</strong> restore and health-check the no-account relay, then prove one end-to-end issue mirror.</p><div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/LMManagerProFeedback/">Visit support site <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/LMManagerProFeedback">View source <span aria-hidden="true">↗</span></a></div></div>
-          </article>
-
-          <article class="project-card project-card--compact" data-category="games support" data-repo="FabriconFeedback">
-            <div><div class="project-meta"><span class="project-number">Support · 14</span><span class="project-state archive">Needs repair</span></div><h3>Fabricon Feedback</h3></div>
-            <div><p>Public aerospace support surface and planned issue bridge for AeroTycoon and Fabricon Aerospace.</p><p class="next-step"><strong>Resume at:</strong> repair the board/relay, configure bridge secrets and labels, then smoke-test both directions.</p><div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/FabriconFeedback/">Visit support site <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/FabriconFeedback">View source <span aria-hidden="true">↗</span></a></div></div>
-          </article>
-
-          <article class="project-card project-card--compact" data-category="archive" data-repo="Unreal-Engine-4-Training">
-            <div><div class="project-meta"><span class="project-number">Archive · 15</span><span class="project-state archive">Empty seed</span></div><h3>Unreal Engine 4 Training</h3></div>
-            <div><p>A 2020 repository containing only a title README—no Unreal project, curriculum, assets, or implementation.</p><p class="next-step"><strong>Decision:</strong> define a training artifact and first milestone, or archive the repository.</p><div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/Unreal-Engine-4-Training/">Visit project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/Unreal-Engine-4-Training">View private source <span aria-hidden="true">↗</span></a></div></div>
-          </article>
-
-          <article class="project-card project-card--command" data-category="ai tools">
-            <div class="project-glyph glyph-command" aria-hidden="true">B/CC</div>
-            <div class="project-meta"><span class="project-number">Infrastructure · 16</span><span class="project-state active">Operational</span></div>
-            <h3>Bizzy Command Center</h3>
-            <p>A private control room for my personal computing fleet—showing what is online, where capacity is available, and letting me start or rejoin Codex on the machine where each project actually lives.</p>
-            <p class="next-step"><strong>Resume at:</strong> durable sessions across service restarts and deeper structured Codex integration.</p>
-            <ul class="tags" aria-label="Technologies"><li>FastAPI</li><li>React</li><li>Tailscale</li></ul>
-            <div class="project-actions"><a class="text-link" href="bizzy-command-center/">Visit project page <span aria-hidden="true">↗</span></a><span class="source-project-link">Private system</span></div>
-          </article>
         </div>
-        <p class="filter-empty" data-filter-empty hidden>No projects match this filter yet.</p>
-      </section>
 
-      <section class="lineage" aria-labelledby="lineage-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">Duplicate map</p><h2 id="lineage-title">Same impulse. Different bets.</h2></div>
-          <p>These repositories overlap in subject matter, but the implementation evidence shows four different kinds of relationship.</p>
-        </div>
-        <div class="lineage-grid">
-          <article>
-            <span>AI workspaces</span>
-            <h3>Four scopes, not four copies</h3>
-            <p><strong>LM Manager Pro</strong> is the broad creation platform. <strong>ComfyChat</strong> is the narrower fleet cockpit. <strong>Mira</strong> is a clean-slate chat-first experiment. <strong>LM Laboratory</strong> is the retired inspectable workbench retained for reference.</p>
-          </article>
-          <article>
-            <span>Aviation simulation</span>
-            <h3>Shipping game vs architectural rewrite</h3>
-            <p><strong>Fabricon: Aerospace</strong> is the released game developed in the AeroTycoonGame repository. <strong>FabriconAerospace</strong> is a newer Clean Swift rewrite with a finance slice and extensive scaffolding.</p>
-          </article>
-          <article>
-            <span>Music tools</span>
-            <h3>Production studio vs career operations</h3>
-            <p><strong>PocketDAW</strong>, formerly Singer Keepers, is a professional vocal-production studio. <strong>ArtistHub</strong> is an older song catalog, rights, release, and artist-operations workspace.</p>
-          </article>
-          <article>
-            <span>Harness lineage</span>
-            <h3>Specification seed vs realized system</h3>
-            <p><strong>harness-os-2</strong> contains the original specification kit. <strong>Harness OS</strong> is its runnable Python, React, WebUI, and TUI implementation.</p>
-          </article>
-        </div>
+        <details class="labs-archive">
+          <summary>
+            <span><strong>Labs &amp; Archive</strong><small>Supporting, experimental, and historical work</small></span>
+            <span class="labs-count"><strong data-labs-count>9</strong> items</span>
+          </summary>
+          <div class="labs-intro">
+            <p>These projects remain available for context without competing with current releases and active work.</p>
+            <span>Repository sync: <time data-repo-audit-date datetime="2026-09-02">2026-09-02</time></span>
+          </div>
+          <div class="labs-grid">
+            <article class="project-card lab-card" data-category="ai tools archive" data-repo="LM-Laboratory">
+              <div class="project-meta"><span class="project-number">AI reference</span><span class="project-state archive">Archived</span></div>
+              <h3>LM Laboratory</h3>
+              <p>A retired native workbench for discovering, loading, comparing, and orchestrating local models.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/LM-Laboratory/">Project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/LM-Laboratory">Private source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="ai tools" data-repo="Lucidity">
+              <div class="project-meta"><span class="project-number">AI experiment</span><span class="project-state prototype">Early alpha</span></div>
+              <h3>Lucidity / Mira</h3>
+              <p>A clean-slate, chat-first AI studio exploring multi-model workspaces and persistent projects.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/Lucidity/">Project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/Lucidity">View source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="creative tools" data-repo="ArtistHub">
+              <div class="project-meta"><span class="project-number">Music archive</span><span class="project-state prototype">Functional beta</span></div>
+              <h3>ArtistHub / Song Keepers</h3>
+              <p>An earlier song catalog, rights, release, and artist-operations workspace adjacent to PocketDAW.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/ArtistHub/">Project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/ArtistHub">Private source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="games" data-repo="FabriconAerospace">
+              <div class="project-meta"><span class="project-number">Aviation lab</span><span class="project-state building">Early rewrite</span></div>
+              <h3>Fabricon Aerospace Rewrite</h3>
+              <p>A Clean Swift architectural exploration with a finance vertical slice and supporting design work.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/FabriconAerospace/">Project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/FabriconAerospace">Private source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="ai archive" data-repo="harness-os-2">
+              <div class="project-meta"><span class="project-number">Specification seed</span><span class="project-state archive">Historical</span></div>
+              <h3>harness-os-2</h3>
+              <p>The original specification-kit precursor that became the active Harness OS implementation.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/harness-os-2/">Project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/harness-os-2">View source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="ai support" data-repo="LMManagerProFeedback">
+              <div class="project-meta"><span class="project-number">Support</span><span class="project-state evolving">Maintenance</span></div>
+              <h3>LM Manager Pro Feedback</h3>
+              <p>The public support site, issue board, and feedback relay companion for LM Manager Pro.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/LMManagerProFeedback/">Support site <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/LMManagerProFeedback">View source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="games support" data-repo="FabriconFeedback">
+              <div class="project-meta"><span class="project-number">Support</span><span class="project-state archive">Maintenance</span></div>
+              <h3>Fabricon Feedback</h3>
+              <p>The public aerospace support surface and planned issue bridge for the Fabricon family.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/FabriconFeedback/">Support site <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/FabriconFeedback">View source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="archive" data-repo="Unreal-Engine-4-Training">
+              <div class="project-meta"><span class="project-number">Archive</span><span class="project-state archive">Historical</span></div>
+              <h3>Unreal Engine 4 Training</h3>
+              <p>A minimal 2020 repository retained as an early Unreal Engine learning artifact.</p>
+              <div class="project-actions"><a class="text-link" href="https://sankofa06.github.io/Unreal-Engine-4-Training/">Project page <span aria-hidden="true">↗</span></a><a class="source-project-link" href="https://github.com/Sankofa06/Unreal-Engine-4-Training">Private source <span aria-hidden="true">↗</span></a></div>
+            </article>
+            <article class="project-card lab-card" data-category="ai tools">
+              <div class="project-meta"><span class="project-number">Infrastructure</span><span class="project-state active">Operational</span></div>
+              <h3>Bizzy Command Center</h3>
+              <p>A private control room for computing capacity and Codex sessions across a personal machine fleet.</p>
+              <div class="project-actions"><a class="text-link" href="bizzy-command-center/">Project page <span aria-hidden="true">↗</span></a><span class="source-project-link">Private system</span></div>
+            </article>
+          </div>
+        </details>
       </section>
 
       <section class="principles" id="about" aria-labelledby="about-title">
@@ -305,25 +254,6 @@
           <article><span>02</span><h3>Native feel</h3><p>Platform conventions are a design advantage, not a limitation to work around.</p></article>
           <article><span>03</span><h3>Systems thinking</h3><p>The best tools reveal relationships, state, and progress—not just a collection of screens.</p></article>
         </div>
-      </section>
-
-      <section class="repository-map" aria-labelledby="map-title">
-        <div>
-          <p class="eyebrow">Workspace map</p>
-          <h2 id="map-title">One body of work, mapped.</h2>
-          <p data-repo-total-copy>The GitHub account contains seventeen repositories. Fifteen project and support repositories are shown above. The public portfolio repository and the private Portal automation repository are infrastructure, so neither is repeated as a project card.</p>
-        </div>
-        <div class="repo-cloud" aria-label="Project repositories and codebases">
-          <span>AI workspaces · 4</span><span>Aviation simulations · 2</span><span>Music tools · 2</span>
-          <span>Agent OS · 2</span><span>Standalone product · 1</span><span>Support sidecars · 2</span>
-          <span>Governance simulation · 1</span><span>Archive seed · 1</span>
-        </div>
-      </section>
-
-      <section class="experiments" aria-labelledby="experiments-title">
-        <p class="eyebrow">Outside the GitHub inventory</p>
-        <h2 id="experiments-title">Ideas and local experiments</h2>
-        <p>Data Center Tycoon, LM Developer Bridge, Backbeam, SonicTheHedgebot, and earlier AeroTycoon experiments remain part of the broader body of work, but they are not counted as current GitHub repositories in this atlas.</p>
       </section>
 
       <section class="contact-strip" aria-label="Contact">
