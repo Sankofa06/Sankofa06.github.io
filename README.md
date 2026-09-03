@@ -6,7 +6,7 @@ The site intentionally describes the work without requiring each source reposito
 
 The homepage is editorially curated: released and approaching-release products lead, active builds follow, and supporting or historical repositories remain available in a collapsed Labs & Archive section. Repository-feed discovery adds new public projects to that collapsed section so it cannot silently reorder the priority lineup.
 
-Repository-local case studies live under `projects/`. The Perfect Agent is hosted there while its standalone source repository remains unpublished.
+Repository-local case studies live under `projects/`. The Perfect Agent case study links to its public MIT-licensed source repository.
 
 ## Local preview
 
