@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-02T17:54:27+00:00",
+  "generated_at": "2026-09-25T20:36:11+00:00",
   "owner": "Sankofa06",
   "inventory": {
-    "repositories_seen": 17,
-    "project_repositories_listed": 15,
+    "repositories_seen": 20,
+    "project_repositories_listed": 16,
     "infrastructure_repositories": 2,
-    "new_public_repositories_auto_listed": [],
+    "new_public_repositories_auto_listed": ["tower"],
     "new_private_repositories_pending_review": 0
   },
   "repositories": [
@@ -24,6 +24,7 @@
     {"repo":"harness-os-2","display_name":"harness-os-2","role":"spec-seed","family":"agent-os","categories":["ai","tools"],"visibility":"public","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/harness-os-2/","source_url":"https://github.com/Sankofa06/harness-os-2","description":null,"topics":[],"pushed_at":null},
     {"repo":"LMManagerProFeedback","display_name":"LM Manager Pro Feedback","role":"support-sidecar","family":"ai-workspaces","categories":["ai","tools"],"visibility":"public","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/LMManagerProFeedback/","source_url":"https://github.com/Sankofa06/LMManagerProFeedback","description":null,"topics":[],"pushed_at":null},
     {"repo":"FabriconFeedback","display_name":"Fabricon Feedback","role":"support-sidecar","family":"aviation-simulation","categories":["games"],"visibility":"public","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/FabriconFeedback/","source_url":"https://github.com/Sankofa06/FabriconFeedback","description":null,"topics":[],"pushed_at":null},
-    {"repo":"Unreal-Engine-4-Training","display_name":"Unreal Engine 4 Training","role":"archive-seed","family":"archive","categories":["archive"],"visibility":"private","archived":false,"default_branch":"master","page_url":"https://sankofa06.github.io/Unreal-Engine-4-Training/","source_url":"https://github.com/Sankofa06/Unreal-Engine-4-Training","description":null,"topics":[],"pushed_at":null}
+    {"repo":"Unreal-Engine-4-Training","display_name":"Unreal Engine 4 Training","role":"archive-seed","family":"archive","categories":["archive"],"visibility":"private","archived":false,"default_branch":"master","page_url":"https://sankofa06.github.io/Unreal-Engine-4-Training/","source_url":"https://github.com/Sankofa06/Unreal-Engine-4-Training","description":null,"topics":[],"pushed_at":null},
+    {"repo":"tower","display_name":"Tower","role":"operating-skill","family":"agent-systems","categories":["ai","tools","systems"],"visibility":"public","archived":false,"default_branch":"main","page_url":"https://sankofa06.github.io/tower/","source_url":"https://github.com/Sankofa06/tower","description":"A compact operating skill for ambitious agent work, with initiative framing, model and persona routing, phase gates, and an inspectable control view.","topics":[],"pushed_at":"2026-09-16T02:32:58+00:00"}
   ]
 }
