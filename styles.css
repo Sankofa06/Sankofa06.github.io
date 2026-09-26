@@ -93,8 +93,11 @@ h1 span { color: var(--acid); }
 .visual-lm img { filter: drop-shadow(0 34px 35px rgba(0,0,0,.38)); height: min(64%, 330px); object-fit: contain; width: auto; }
 .visual-copy { bottom: 28px; display: flex; gap: 8px; left: 28px; position: absolute; }
 .visual-copy span { background: rgba(4,10,9,.64); border: 1px solid rgba(255,255,255,.15); border-radius: 999px; color: #b7f9ef; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .58rem; letter-spacing: .12em; padding: 6px 9px; }
-.visual-aero { background: #0b1110; }
-.visual-aero img { object-fit: contain; object-position: center; }
+.visual-aero { align-items: center; background: radial-gradient(ellipse at 50% 45%, #17231f, #0b1110 72%); display: flex; justify-content: center; padding: 24px; }
+.fabricon-screen-pair { align-items: center; display: grid; gap: clamp(10px, 1.5vw, 20px); grid-template-columns: repeat(2, minmax(0, 1fr)); justify-items: center; max-width: 760px; width: calc(100% - 48px); }
+.fabricon-screen { display: grid; gap: 12px; justify-items: center; margin: 0; min-width: 0; }
+.fabricon-screen img { border: 1px solid rgba(255,255,255,.12); border-radius: 18px; box-shadow: 0 18px 34px rgba(0,0,0,.34); display: block; height: min(32vw, 380px); max-width: 100%; object-fit: contain; object-position: center; width: auto; }
+.fabricon-screen figcaption { color: #b9c4bd; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .62rem; letter-spacing: .14em; text-align: center; text-transform: uppercase; }
 .visual-republic { align-items: center; background: radial-gradient(circle at 50% 38%, #253943 0, #10191f 48%, #090e12 100%); display: flex; flex-direction: column; justify-content: center; }
 .visual-republic::before { background-image: linear-gradient(rgba(221,195,128,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(221,195,128,.08) 1px, transparent 1px); background-size: 44px 44px; content: ""; inset: 0; mask-image: linear-gradient(to bottom, #000, transparent 85%); position: absolute; }
 .visual-republic::after { border: 1px solid rgba(221,195,128,.25); content: ""; inset: 28px; position: absolute; }
@@ -224,6 +227,9 @@ footer { border-top: 1px solid var(--line); color: #858a83; display: flex; flex-
   .project-card--wide { padding: 0; }
   .project-body { padding: 30px 24px 34px; }
   .project-visual { min-height: 280px; }
+  .visual-aero { padding: 18px 14px; }
+  .fabricon-screen-pair { gap: 8px; }
+  .fabricon-screen img { height: min(77vw, 380px); max-width: 100%; }
   .visual-lm img { height: 58%; }
   .project-card--compact { gap: 20px; grid-template-columns: 1fr; }
   .labs-archive summary { gap: 12px; grid-template-columns: 1fr auto auto; padding: 20px; }
