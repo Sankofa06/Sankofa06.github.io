@@ -21,7 +21,7 @@ function createDiscoveredCard(repository, index) {
   const card = document.createElement('article');
   card.className = 'project-card lab-card project-card--discovered';
   card.dataset.repo = repository.repo;
-  card.dataset.category = (repository.categories || ['tools']).join(' ');
+  card.dataset.category = (Array.isArray(repository.categories) ? repository.categories : ['tools']).join(' ');
 
   const meta = document.createElement('div');
   meta.className = 'project-meta';
@@ -59,16 +59,29 @@ async function syncRepositoryFacts() {
       throw new Error('Repository feed has an unsupported shape');
     }
 
-    const repositories = new Map(payload.repositories.map((item) => [item.repo, item]));
-    for (const card of document.querySelectorAll('[data-repo]')) {
-      if (!repositories.has(card.dataset.repo)) card.remove();
+    // Feed discovery supplements the reviewed portfolio; absence is not retirement.
+    const validRepositories = payload.repositories.filter((item) => item &&
+      typeof item.repo === 'string' && /^[a-z0-9_.-]+$/i.test(item.repo) &&
+      typeof item.display_name === 'string' && item.visibility === 'public' &&
+      !['portal', 'sankofa06.github.io'].includes(item.repo.toLowerCase()));
+    const existing = new Set([...document.querySelectorAll('[data-repo]')]
+      .map((card) => card.dataset.repo.toLowerCase()));
+    // Older curated cards may identify their repository only through a source link.
+    for (const link of document.querySelectorAll('.project-card a[href]')) {
+      try {
+        const url = new URL(link.href);
+        const parts = url.pathname.split('/').filter(Boolean);
+        if (url.hostname === 'github.com' && parts[0]?.toLowerCase() === 'sankofa06' && parts[1]) {
+          existing.add(parts[1].toLowerCase());
+        }
+      } catch { /* A relative or invalid link does not identify a repository. */ }
     }
-
-    const existing = new Set([...document.querySelectorAll('[data-repo]')].map((card) => card.dataset.repo));
     let nextIndex = existing.size + 1;
-    for (const repository of payload.repositories) {
-      if (existing.has(repository.repo)) continue;
+    for (const repository of validRepositories) {
+      const key = repository.repo.toLowerCase();
+      if (existing.has(key)) continue;
       labsGrid.append(createDiscoveredCard(repository, nextIndex));
+      existing.add(key);
       nextIndex += 1;
     }
 
@@ -76,9 +89,13 @@ async function syncRepositoryFacts() {
     if (labsCount) labsCount.textContent = String(labsGrid.children.length);
     const auditDate = document.querySelector('[data-repo-audit-date]');
     if (auditDate) {
-      const date = new Date(payload.generated_at).toLocaleDateString('en-CA');
-      auditDate.textContent = date;
-      auditDate.dateTime = date;
+      const timestamp = Date.parse(payload.generated_at);
+      const valid = Number.isFinite(timestamp) && timestamp <= Date.now();
+      const date = valid ? new Date(timestamp).toISOString().slice(0, 10) : null;
+      const stale = valid && Date.now() - timestamp > 7 * 24 * 60 * 60 * 1000;
+      auditDate.textContent = date ? `${date}${stale ? ' (stale snapshot)' : ''}` : 'Date unavailable';
+      if (date) auditDate.dateTime = date;
+      else auditDate.removeAttribute('datetime');
     }
   } catch (error) {
     console.warn('Keeping the evidence-reviewed portfolio because the repository feed could not be applied.', error);
