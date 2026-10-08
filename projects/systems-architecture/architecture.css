@@ -21,7 +21,7 @@
 .architecture-heading { margin-bottom: 34px; }
 .architecture-heading > p { color: var(--muted); max-width: 360px; }
 .case-grid { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.case-study { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; scroll-margin-top: 30px; }
+.case-study { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; scroll-margin-top: 90px; }
 .case-heading { min-height: 230px; padding: 28px 30px 25px; }
 .case-kicker { color: var(--acid); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .64rem; letter-spacing: .1em; margin: 0 0 20px; text-transform: uppercase; }
 .case-heading .project-state { display: inline-block; margin-bottom: 18px; }
