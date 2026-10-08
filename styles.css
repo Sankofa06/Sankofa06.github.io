@@ -251,3 +251,11 @@ footer { border-top: 1px solid var(--line); color: #858a83; display: flex; flex-
 }
 
 .apple-legal { color: #727770; flex-basis: 100%; font-size: .62rem; }
+
+
+/* Public portfolio system map; this diagram is not a product capture. */
+.project-positioning { color: var(--cyan) !important; font-size: .92rem !important; font-weight: 650; margin-top: 8px !important; }
+.fabricon-systems-map { align-content: center; background: linear-gradient(145deg, #202925, #111512); border: 1px solid rgba(102,230,210,.25); border-radius: 18px; display: flex; flex-direction: column; gap: 10px; height: 100%; justify-content: center; margin: 0 auto; max-width: 520px; padding: 28px; width: 100%; }
+.fabricon-systems-map .map-label { color: var(--cyan); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .62rem; letter-spacing: .12em; margin-bottom: 12px; }
+.fabricon-systems-map strong { border: 1px solid rgba(241,243,237,.13); border-radius: 12px; color: var(--ink); font-size: clamp(.9rem, 2vw, 1.25rem); padding: 13px 16px; text-align: center; }
+.fabricon-systems-map .map-arrow { color: var(--cyan); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; text-align: center; }
