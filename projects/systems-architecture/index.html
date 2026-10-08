@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Six systems architecture case studies across local AI, creative software, tuning, and simulation.">
+    <meta name="author" content="Michael Williams">
+    <meta name="theme-color" content="#0b0d0c">
+    <meta property="og:title" content="Systems Architecture Case Studies — Michael Williams">
+    <meta property="og:description" content="Six product systems, each with a clear problem, boundary, tradeoff, and evidence.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sankofa06.github.io/projects/systems-architecture/">
+    <meta property="og:image" content="https://sankofa06.github.io/assets/michael-williams-social-preview.png">
+    <title>Systems Architecture Case Studies — Michael Williams</title>
+    <link rel="icon" href="../../assets/mw-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="architecture.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#case-studies">Skip to case studies</a>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Michael Williams portfolio home">
+        <img class="brand-mark" src="../../assets/mw-mark.svg" width="34" height="34" alt="">
+        <span>Michael Williams</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../../">Portfolio</a>
+        <a class="nav-cta" href="https://github.com/Sankofa06">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main class="architecture-main">
+      <section class="architecture-hero" aria-labelledby="architecture-title">
+        <p class="eyebrow">Portfolio / Systems architecture</p>
+        <h1 id="architecture-title">Six products.<br><span>One systems lens.</span></h1>
+        <p class="architecture-lede">These case studies show how I frame domain boundaries, connect tools to their execution environments, and make the result understandable to the person using it. Each product has its own architecture; the shared pattern is a design approach, not a shared codebase.</p>
+        <div class="architecture-status" aria-label="Public product states">
+          <span><strong>4</strong> App Store products</span>
+          <span><strong>1</strong> app in internal testing</span>
+          <span><strong>1</strong> playable prototype</span>
+        </div>
+      </section>
+
+      <section class="systems-lens" aria-labelledby="systems-lens-title">
+        <div class="systems-lens-copy">
+          <p class="eyebrow">Cross-project system design</p>
+          <h2 id="systems-lens-title">Keep the handoffs visible.</h2>
+          <p>Across AI workspaces, music tools, and simulations, I use the same portfolio lens: clarify what the user wants, keep domain decisions in their own workflow, make external execution explicit, and return a result the user can inspect.</p>
+        </div>
+        <ol class="systems-flow" aria-label="Conceptual architecture lens, not a shared software runtime">
+          <li><span>01</span><strong>Intent</strong><small>What is the person trying to do?</small></li>
+          <li><span>02</span><strong>Domain workflow</strong><small>Which state and decisions belong to this product?</small></li>
+          <li><span>03</span><strong>Execution boundary</strong><small>Which provider, audio engine, or simulation acts?</small></li>
+          <li><span>04</span><strong>Result &amp; evidence</strong><small>What changed, and how can it be checked?</small></li>
+        </ol>
+      </section>
+
+      <section id="case-studies" class="case-studies" aria-labelledby="case-studies-title">
+        <div class="section-heading architecture-heading">
+          <div>
+            <p class="eyebrow">Problem · architecture · tradeoff · evidence</p>
+            <h2 id="case-studies-title">The work, system by system</h2>
+          </div>
+          <p>Release labels describe public product state. Candidate builds and unverified outcomes stay out of release claims.</p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-study" id="comfych-at" aria-labelledby="comfych-at-title">
+            <div class="case-heading">
+              <p class="case-kicker">01 / Local AI orchestration</p>
+              <span class="project-state review">Internal testing</span>
+              <h3 id="comfych-at-title">ComfyChat / Conductor</h3>
+              <p class="case-summary">A mobile cockpit for local model and image workflows.</p>
+            </div>
+            <div class="case-details">
+              <section><h4>Problem</h4><p>Make chat and image-generation work manageable when models and engines can run on different devices.</p></section>
+              <section><h4>Architecture</h4><p>A native iPhone and iPad client organizes Chat, Create, Models, and Settings. Local and on-device model services and ComfyUI image workflows remain distinct execution targets, with the mobile app as the place to start and review work.</p></section>
+              <section><h4>Integrations &amp; boundaries</h4><p>Connects to local AI services and ComfyUI workflows. This is described as an internal-testing product; no live fleet availability or public release is claimed here.</p></section>
+              <section><h4>Tradeoff</h4><p>Supporting different runtimes expands choice while increasing setup and readiness work. The interface has to make the selected model, destination, and result clear.</p></section>
+              <section class="case-evidence"><h4>Verified outcome</h4><p>The public product page identifies ComfyChat as in internal testing. No usage, speed, or fleet-uptime figures are claimed.</p></section>
+              <section class="case-state"><h4>Current product state</h4><p>Internal testing. Public App Store release is not claimed.</p></section>
+            </div>
+            <p class="case-link"><a href="https://sankofa06.github.io/Conductor/">Public product page <span aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="case-study" id="lmmanagerpro" aria-labelledby="lmmanagerpro-title">
+            <div class="case-heading">
+              <p class="case-kicker">02 / Model workspace</p>
+              <span class="project-state active">App Store</span>
+              <h3 id="lmmanagerpro-title">LM Manager Pro</h3>
+              <p class="case-positioning">“An agentic harness in the palm of your hands.”</p>
+              <p class="case-summary">A local-first creation studio spanning different model providers.</p>
+            </div>
+            <div class="case-details">
+              <section><h4>Problem</h4><p>Bring model setup, creative work, and generated assets into a mobile workspace that can work with local, on-device, and cloud models.</p></section>
+              <section><h4>Architecture</h4><p>A SwiftUI and SwiftData app routes creation workflows through a provider layer. Models, personas and teams support chat and image work; Library and Activity make saved assets and recent work easier to find.</p></section>
+              <section><h4>Integrations &amp; boundaries</h4><p>Supports local model services, on-device models, and cloud providers. Model choice is explicit; the portfolio does not claim that the app autonomously takes external actions.</p></section>
+              <section><h4>Tradeoff</h4><p>Provider breadth adds capability and configuration overhead. Keeping routing, creation, and saved work legible helps the user understand where a task runs and what it produced.</p></section>
+              <section class="case-evidence"><h4>Verified outcome</h4><p>The public App Store listing identifies LM Manager Pro as a released product. No performance or adoption metrics are claimed.</p></section>
+              <section class="case-state"><h4>Current product state</h4><p>App Store release. Candidate builds are not presented as public releases.</p></section>
+            </div>
+            <p class="case-link"><a href="https://apps.apple.com/us/app/lm-manager-pro/id6769730602">App Store listing <span aria-hidden="true">↗</span></a> <a href="https://sankofa06.github.io/LMManagerPro/">Public product page <span aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="case-study" id="fabricon" aria-labelledby="fabricon-title">
+            <div class="case-heading">
+              <p class="case-kicker">03 / Aerospace strategy simulation</p>
+              <span class="project-state active">App Store</span>
+              <h3 id="fabricon-title">Fabricon: Aerospace</h3>
+              <p class="case-summary">An aviation-industry company simulation across changing eras.</p>
+            </div>
+            <div class="case-details">
+              <section><h4>Problem</h4><p>Make the growth of an aerospace company playable across aircraft programs, people, research, contracts, finances, and historical change.</p></section>
+              <section><h4>Architecture</h4><p>The game organizes a company simulation around eras and connected business systems. Campus operations and aircraft programs lead into Flight Test, a simulated in-game activity.</p></section>
+              <section><h4>Integrations &amp; boundaries</h4><p>The described product integrates its strategy and flight-test systems inside the game. Flight Test is a simulation; no real aircraft, flight data, or operational control is claimed.</p></section>
+              <section><h4>Tradeoff</h4><p>More management depth creates more navigation and state to explain. A company-and-program framing keeps workforce, research, finance, contracts, and aircraft work inside one understandable game world.</p></section>
+              <section class="case-evidence"><h4>Verified outcome</h4><p>The public App Store listing identifies Fabricon: Aerospace as a released strategy game. No real-world aerospace outcome is claimed.</p></section>
+              <section class="case-state"><h4>Current product state</h4><p>App Store release. This portfolio uses a conceptual system map instead of screenshots without current build provenance.</p></section>
+            </div>
+            <p class="case-link"><a href="https://apps.apple.com/us/app/fabricon-aerospace/id6760683889">App Store listing <span aria-hidden="true">↗</span></a> <a href="https://sankofa06.github.io/AeroTycoonGame/">Public product page <span aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="case-study" id="pocketdaw" aria-labelledby="pocketdaw-title">
+            <div class="case-heading">
+              <p class="case-kicker">04 / Mobile audio workflow</p>
+              <span class="project-state active">App Store</span>
+              <h3 id="pocketdaw-title">PocketDAW: Mobile Studio</h3>
+              <p class="case-summary">A local-first vocal studio that carries a song from capture to export.</p>
+            </div>
+            <div class="case-details">
+              <section><h4>Problem</h4><p>Give a musician a usable recording and production workflow on iPhone and iPad without splitting the song across disconnected tasks.</p></section>
+              <section><h4>Architecture</h4><p>A project-based multitrack workflow connects recording, arranging, editing, mixing, lyrics, and export. The audio engine uses a consistent render plan for live playback and offline output.</p></section>
+              <section><h4>Integrations &amp; boundaries</h4><p>Uses Apple-platform audio input and playback, with portable export. An optional user-operated LM Studio connection supports assistant features; core music work stays within the project workflow.</p></section>
+              <section><h4>Tradeoff</h4><p>Precision controls compete with limited screen space and touch input. Timeline zoom, track sizing, and focused trimming help keep edits manageable on mobile.</p></section>
+              <section class="case-evidence"><h4>Verified outcome</h4><p>The public App Store listing identifies PocketDAW as a released vocal-production studio. No audio-quality or creator-output metric is claimed.</p></section>
+              <section class="case-state"><h4>Current product state</h4><p>App Store release. A fresh full-project capture is still needed before using product imagery as current marketing proof.</p></section>
+            </div>
+            <p class="case-link"><a href="https://apps.apple.com/us/app/pocketdaw-mobile-studio/id6769739931">App Store listing <span aria-hidden="true">↗</span></a> <a href="https://sankofa06.github.io/SingerKeepers/">Public product page <span aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="case-study" id="forzadvisor" aria-labelledby="forzadvisor-title">
+            <div class="case-heading">
+              <p class="case-kicker">05 / Player-controlled tuning</p>
+              <span class="project-state active">App Store</span>
+              <h3 id="forzadvisor-title">ForzAdvisor</h3>
+              <p class="case-summary">A companion workflow for reviewing and testing tune changes.</p>
+            </div>
+            <div class="case-details">
+              <section><h4>Problem</h4><p>Help a player turn vehicle details and tuning goals into a set of changes they can review and try in the game.</p></section>
+              <section><h4>Architecture</h4><p>The implemented flow is user-led: supply car details by entry or photo, inspect a tune plan, then apply supported settings in game and evaluate the result. The player owns the final test loop.</p></section>
+              <section><h4>Integrations &amp; boundaries</h4><p>Works from user-supplied car details. FH6 is the numeric-tuning path; FH5 remains a build-plan and research path. No bundled car roster, live telemetry, or in-game settings writeback is claimed.</p></section>
+              <section><h4>Tradeoff</h4><p>Manual confirmation keeps the player in control and works without relying on an unsupported game-control interface, while making the real in-game drive necessary to validate each change.</p></section>
+              <section class="case-evidence"><h4>Verified outcome</h4><p>The public App Store listing identifies ForzAdvisor as a released companion. This case study makes no accuracy, lap-time, or handling-improvement claim.</p></section>
+              <section class="case-state"><h4>Current product state</h4><p>App Store release. The game provides the validation feedback; the companion does not claim to write settings into the game.</p></section>
+            </div>
+            <p class="case-link"><a href="https://apps.apple.com/us/app/forzadvisor/id6775224250">App Store listing <span aria-hidden="true">↗</span></a> <a href="https://sankofa06.github.io/ForzAdvisor/">Public product page <span aria-hidden="true">↗</span></a> <a href="https://github.com/Sankofa06/ForzAdvisor">Public source <span aria-hidden="true">↗</span></a></p>
+          </article>
+
+          <article class="case-study" id="the-long-republic" aria-labelledby="the-long-republic-title">
+            <div class="case-heading">
+              <p class="case-kicker">06 / Civic and political simulation</p>
+              <span class="project-state building">Playable prototype</span>
+              <h3 id="the-long-republic-title">The Long Republic</h3>
+              <p class="case-summary">A mobile-first political dynasty prototype grounded in local civic decisions.</p>
+            </div>
+            <div class="case-details">
+              <section><h4>Problem</h4><p>Make political change understandable through the daily decisions, people, and institutions of a place.</p></section>
+              <section><h4>Architecture</h4><p>A repeatable settlement simulation and saved civic state support a long political time horizon. The founding and frontier arc introduces residents, assignments, petitions, and infrastructure before the larger dynasty and regime-change systems.</p></section>
+              <section><h4>Integrations &amp; boundaries</h4><p>The current product is a contained Unreal prototype. The simulation and character content are in-game systems; no external political data integration is claimed.</p></section>
+              <section><h4>Tradeoff</h4><p>The first chapter must teach decisions clearly while leaving room for consequence over a longer horizon. A planned 150-character roster is treated as in-development content, not a shipped count.</p></section>
+              <section class="case-evidence"><h4>Verified outcome</h4><p>The public project page identifies The Long Republic as a playable prototype. A 150-model completed roster or public release is not claimed.</p></section>
+              <section class="case-state"><h4>Current product state</h4><p>Playable prototype. Founding/frontier content and roster verification remain in development.</p></section>
+            </div>
+            <p class="case-link"><a href="https://sankofa06.github.io/the-long-republic/">Public prototype page <span aria-hidden="true">↗</span></a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="architecture-principles" aria-labelledby="architecture-principles-title">
+        <p class="eyebrow">Evidence standard</p>
+        <h2 id="architecture-principles-title">Say what is live. Label what is still being built.</h2>
+        <p>Public release pages, internal candidates, and prototypes are different product states. This portfolio names a state only when a public listing or project page supports it, and it avoids invented user counts, performance claims, and employer credentials.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Michael Williams · Sankofa06</span>
+      <a href="../../">Back to portfolio <span aria-hidden="true">↗</span></a>
+      <small class="apple-legal">Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc.</small>
+    </footer>
+  </body>
+</html>
